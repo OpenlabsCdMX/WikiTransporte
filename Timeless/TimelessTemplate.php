@@ -19,8 +19,16 @@ class TimelessTemplate extends BaseTemplate {
 				<div id="user-tools">
 					<?php $this->outputUserLinks(); ?>
 				</div>
+
+<div id="p-logo-text" class="mw-portlet" role="banner">
+<a id="p-banner" class="mw-wiki-title long" href="/">
+<img src="/resources/assets/logo.png" height="35px" />
+</a>
+						</div>
+
+
 				<?php
-				$this->outputLogo( 'p-logo-text', 'text' );
+			//	$this->outputLogo( 'p-logo-text', 'text' );
 				$this->outputSearch();
 				?>
 			</div>
@@ -49,7 +57,7 @@ class TimelessTemplate extends BaseTemplate {
 			<div id="mw-content-block" class="ts-inner">
 				<div id="mw-site-navigation">
 					<?php
-					$this->outputLogo( 'p-logo', 'image' );
+				//	$this->outputLogo( 'p-logo', 'image' );
 					$this->outputSiteNavigation();
 
 					$siteTools = $this->assemblePortlet( array(
