@@ -14,7 +14,6 @@ body {
 	line-height: 1.4;
 	font-size: @font-size;
 }
-
 #mw-content {
 	.box;
 	background: @background;
@@ -183,7 +182,7 @@ body {
 			border-bottom-color: @grey;
 		}
 		&.selected {
-			border-bottom-color: @blue;
+			border-bottom-color: @verde-escuro;
 
 			a {
 				color: @text;
@@ -217,13 +216,18 @@ body {
 
 /* Misc */
 
+.mw-body a.external,
+a.external,
+.external a,
 a {
 	text-decoration: none;
 	color: @verde-claro;
 
-	&:hover,
-	&:visited {
+	&:hover {
 		color: @verde-escuro;
+	}
+	&:visited {
+		color: @grey-dark;
 	}
 }
 a.new,
